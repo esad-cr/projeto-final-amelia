@@ -96,7 +96,7 @@ iframe, video {
   --black-color-lighten: hsl(0, 0%, 30%);
   --white-color: #fff;
   --body-color: hsl(39, 30%, 93%);        /* bege/creme */
-  --primary-color: hsl(318, 90%, 77%);    /* rosa RGB(249,145,204) */
+  --primary-color: #AF3C49;    /* rosa escuro */
   --secondary-color: hsl(0, 0%, 10%);     /* preto para texto */
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -302,6 +302,7 @@ h6, .h6{
   display: flex;
   align-items: center;
   font-size: 1.5rem;
+  font-weight: 900;
 }
 
 #headerLogo img {
@@ -447,10 +448,12 @@ h6, .h6{
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  padding: 4rem 2rem;
+  padding: 6rem 4rem;
   max-width: 1680px;
   margin: 0 auto;
+  min-height: 90vh; /* ocupa quase o ecrã todo */
 }
+
 
 #hero h1 span {
   color: var(--primary-color); /* rosa no destaque do título */
@@ -465,11 +468,12 @@ h6, .h6{
   line-height: 1.6;
   color: var(--black-color-lighten);
 }
-
+ 
 .hero__image img {
-  width: 300px;
-  border-radius: 50%;
+  width: 700px;
+  margin-bottom: -6rem; /* cola a imagem ao fundo */
 }
+
 
 /* Botão */
 .btn {
