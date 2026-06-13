@@ -1,4 +1,4 @@
-/*! NOTE: These are just recommended default global styles, edit as required */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Fira+Sans:wght@400;600&display=swap');
 
 ::selection { /* Optional */
   /* It can be really hard to read highlighted text with a text-shadow, it should be removed when selected */
@@ -91,13 +91,13 @@ iframe, video {
   --header-height: 3.5rem;
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --black-color: hsl(220, 24%, 12%);
-  --black-color-light: hsl(220, 24%, 15%);
-  --black-color-lighten: hsl(220, 20%, 18%);
+  --black-color: hsl(0, 0%, 10%);
+  --black-color-light: hsl(0, 0%, 20%);
+  --black-color-lighten: hsl(0, 0%, 30%);
   --white-color: #fff;
-  --body-color: hsla(90, 34%, 63%, .5);
-  --primary-color: hsla(9, 73%, 50%, 1);
-  --secondary-color: hsla(203, 37%, 22%, 1);
+  --body-color: hsl(39, 30%, 93%);        /* bege/creme */
+  --primary-color: hsl(318, 90%, 77%);    /* rosa RGB(249,145,204) */
+  --secondary-color: hsl(0, 0%, 10%);     /* preto para texto */
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   /*--body-font: "Montserrat", sans-serif;*/
