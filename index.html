@@ -1,63 +1,109 @@
+<!--
+    Nome: Amélia Petiz | Nº: 3230579
+    Exercício: Portfólio
+    Ano letivo: 3º, 2025-2026 | Semestre: 2º
+    UC: Laboratório de Projeto II
+    Curso: L.DGM | Escola: ESAD // Politécnico de Leiria
+    Docente: Luís Carradas
+    
+-->
 <!DOCTYPE html>
 <html lang="pt-PT">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfólio</title>
+        <title>Amélia Petiz — Portfólio</title>
         <meta name="author" content="Amélia Petiz" />
-        <meta name="description" content="Projetos" />
-        <meta name="keywords" content="Projeto Final, Licenciatura Design Multimédia" />
+        <meta name="description" content="Portfólio de Design Multimédia de Amélia Petiz" />
+        <meta name="keywords" content="design multimédia, portfólio, ESAD, Leiria" />
         <link rel="icon" type="image/x-icon" href="imagens/favicon.ico">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
-
-        </head>
+    </head>
     <body>
-        <!-- Contém tudo o que será exibido na página: textos, imagens, links, etc. -->
-        <header id="topHeader" class="pageWidth">
-        <!-- Representa o cabeçalho da página ou de uma seção. Contém títulos, logotipo, menus, etc.-->        
+        <header id="topHeader">
             <nav id="mainMenu">
                 <div class="navAction">
                     <div id="headerLogo">
-                        <a href="index.html" title="Projecto Final - Index" rel="noopener noreferrer"><img src="imagens/logo.svg" alt="Rocket Company Logo"><strong>Rocket Company</strong></a>
+                        <a href="index.html" title="Início">Amélia Petiz</a>
                     </div>
                     <div class="nav__toggle" id="nav-toggle">
-                        <i class="ri-menu-line nav__burger"></i>
-                        <i class="ri-close-line nav__close"></i>
+                        <span class="nav__burger">☰</span>
+                        <span class="nav__close">✕</span>
                     </div>
                 </div>
-            <!-- Define uma área de navegação, com links internos ou externos. -->
                 <div class="nav__menu" id="navMenu">
                     <ul class="nav__list">
-                        <li>
-                            <a class="nav__link active" href="index.html" title="página principal" rel="noopener noreferrer">Início</a>
-                        </li>
-                        <li>
-                            <a class="nav__link" href="sobre-mim.html" title="Sobre mim" rel="noopener noreferrer">Sobre mim</a>
-                        </li>
-                        <li>
-                            <a class="nav__link" href="projetos.html" title="Os meus projetos" rel="noopener noreferrer">Projetos</a>
-                        </li>
-                        <li>
-                            <a class="nav__link" href="processing.html" title="Trabalhos em Processing" rel="noopener noreferrer">Processing</a>
-                        </li>
-                        <li>
-                            <a class="nav__link" href="contactos.html" title="COntactos" rel="noopener noreferrer">Contactos</a>
-                        </li>
+                        <li><a class="nav__link active" href="index.html">Início</a></li>
+                        <li><a class="nav__link" href="projects.html">Projetos</a></li>
+                        <li><a class="nav__link" href="processing.html">Processing</a></li>
+                        <li><a class="nav__link" href="profile.html">Perfil</a></li>
+                        <li><a class="nav__link" href="contact.html">Contactos</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <main>
-            <h1>Página Index</h1>
-            <h2>Artigo Principal</h2>
+
+        <main id="mainContent">
+
+            <!-- Secção hero: apresentação principal -->
+            <section id="hero">
+                <div class="hero__text">
+                <h1>Design <br>Multimedia<br><span>Portfolio</span></h1>
+                    <p>Estudante de Design Multimédia na ESAD.CR</p>
+                    <a href="projects.html" class="btn">Ver Projetos</a>
+                </div>
+                <div class="hero__image">
+                    <!-- ilustração/bonequinho vai aqui -->
+                    <img src="imagens/ilustracao.png" alt="Ilustração de Amélia Petiz">
+                </div>
+            </section>
+
+            <!-- Secção de resumo dos projetos -->
+            <section id="featured">
+                <h2>Projetos</h2>
+                <ul class="projects__grid">
+                    <li>
+                        <article>
+                            <img src="imagens/fluxia-thumb.jpg" alt="Fluxia app prototype">
+                            <h3>Fluxia</h3>
+                            <p>Projeto de protótipo de aplicação.</p>
+                            <a href="project-fluxia.html">Ver Projeto →</a>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <img src="imagens/otherclocks-thumb.jpg" alt="OtherClocks watch face design">
+                            <h3>OtherClocks</h3>
+                            <p>Projeto de design de mostrador de relógio.</p>
+                            <a href="project-otherclocks.html">Ver Projeto →</a>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <img src="imagens/augmented-thumb.jpg" alt="Augmented Narratives">
+                            <h3>Augmented Narratives</h3>
+                            <p>Ninja das Caldas — projeto de realidade aumentada.</p>
+                            <a href="project-augmented-narratives.html">Ver Projeto →</a>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <img src="imagens/video-thumb.jpg" alt="Video Explicativo e Interativo">
+                            <h3>Vídeo Explicativo</h3>
+                            <p>Projeto de vídeo explicativo e interativo.</p>
+                            <a href="project-video-explicativo.html">Ver Projeto →</a>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
         </main>
-        <footer>
-            <p>&copy; - Todos os direitos reservados <b> | </b> 2026 Projeto
-            Final</p>
+
+        <footer id="mainFooter">
+            <p>&copy; 2026 Amélia Petiz — Todos os direitos reservados</p>
         </footer>
+
         <script src="js/script.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js" integrity="sha512-lbO95HE52QWwrDVEaDJmW9Xr8UIfMpRFT3akB8ett7lGfWsrGKz07L6wfwnF3KJ3T4a8cZupAKoI9Q2jH+0QIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="processing/script.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </body>
 </html>

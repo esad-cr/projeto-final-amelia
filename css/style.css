@@ -437,3 +437,128 @@ h6, .h6{
   padding: 20px;
   text-align: center;
 }
+/****************************************
+************* secção hero ***************
+****************************************/
+
+/* Área principal com apresentação */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+#hero h1 span {
+  color: var(--primary-color); /* rosa no destaque do título */
+}
+
+.hero__text {
+  max-width: 600px;
+}
+
+.hero__text p {
+  margin-top: 1rem;
+  line-height: 1.6;
+  color: var(--black-color-lighten);
+}
+
+.hero__image img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+/* Botão */
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  font-weight: var(--font-semi-bold);
+  transition: opacity 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+  color: var(--white-color);
+}
+
+/****************************************
+********* secção projetos em destaque ***
+****************************************/
+
+/* Grelha de projetos na página principal */
+#featured {
+  padding: 3rem 2rem;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+#featured h2 {
+  margin-bottom: 2rem;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* Card de cada projeto */
+.projects__grid article {
+  background-color: var(--white-color);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 4px 20px hsla(0, 0%, 0%, 0.06);
+  transition: transform 0.3s;
+}
+
+.projects__grid article:hover {
+  transform: translateY(-4px); /* sobe ao passar o rato */
+}
+
+.projects__grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: hsl(39, 30%, 88%); /* placeholder enquanto não há imagem */
+}
+
+.projects__grid h3 {
+  margin-bottom: 0.5rem;
+}
+
+.projects__grid p {
+  color: var(--black-color-lighten);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.projects__grid a {
+  font-weight: var(--font-semi-bold);
+  color: var(--primary-color);
+}
+
+/****************************************
+************* responsive ****************
+****************************************/
+
+/* Em telemóvel, os cards ficam em coluna */
+@media screen and (max-width: 992px) {
+  #hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+}
