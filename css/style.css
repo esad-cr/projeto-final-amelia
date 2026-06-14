@@ -566,3 +566,50 @@ h6, .h6{
     grid-template-columns: 1fr;
   }
 }
+
+/* Poster do projeto */
+#project-poster {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+#project-poster img {
+  width: 100%;
+  border-radius: 1rem;
+}
+/****************************************
+*********** página de projeto ***********
+****************************************/
+
+#project-poster {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+#project-poster img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+#project-nav {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid hsla(0, 0%, 0%, 0.1);
+}
+
+#project-nav a {
+  font-weight: var(--font-semi-bold);
+  color: var(--primary-color);
+}
+#project-header {
+  padding: 2rem 4rem;
+}
+
+#project-description {
+  padding: 0 4rem 2rem;
+}
