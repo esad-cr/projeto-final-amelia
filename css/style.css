@@ -612,4 +612,20 @@ h6, .h6{
 
 #project-description {
   padding: 0 4rem 2rem;
+} 
+/* Forçar cards da grelha de projetos com altura igual */
+main > ul {
+  align-items: stretch;
+}
+
+main > ul > li {
+  display: flex;
+}
+
+main > ul > li > article {
+  width: 100%;
+}
+/* Empurra o "Ver Projeto" do card de vídeo para baixo */
+#mainContent ul li:last-child article a {
+  margin-top: 3rem;
 }
