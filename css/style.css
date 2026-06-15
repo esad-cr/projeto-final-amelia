@@ -629,3 +629,11 @@ main > ul > li > article {
 #mainContent ul li:last-child article a {
   margin-top: 3rem;
 }
+
+#p5Canvas {
+  display:flex;
+  flex-direction:column;
+  align-items: :center;
+  padding: 0.5rem;
+  gap:0.5rem;
+  }
