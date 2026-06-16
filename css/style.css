@@ -875,3 +875,19 @@ main > ul > li > article {
   color: #AF3C49;
   font-weight: 600;
 }
+.projeto__poster {
+  width: 80%;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.projeto__video {
+  width: 80%;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
