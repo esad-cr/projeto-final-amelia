@@ -1,23 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Fira+Sans:wght@400;600&display=swap');
 
-::selection { /* Optional */
-  /* It can be really hard to read highlighted text with a text-shadow, it should be removed when selected */
-  text-shadow: none;
+::selection {
   
-  /* NOTE: Using this means the color and background-color are set to transparent for selected text... */
-  /* So you can customise your styles below */
+  text-shadow: none;
   color: #fff;
   background-color: #00f;
 }
 
 html {
-  /* Make base font-size 100% of browser font-size */
+
   font-size: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   html {
-    scroll-behavior: smooth; /* Smoothly animate to different sections within a page, only if the user doesn't mind animations */
+   
+    scroll-behavior: smooth;
   }
 }
 
@@ -25,104 +23,79 @@ html {
 *::before,
 *::after,
 html {
-  /* Declare your box-sizing here
-  /* https://css-tricks.com/box-sizing */
+ 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /* outras opções - content-box */
 }
 
 body {
-  /* Declare your default font stack here */
-  font-family: "Font Stack", sans-serif, serif, monospace, cursive, fantasy;
-  /* outras opções - serif, monospace, cursive, fantasy */
 
-  /* Better text rendering - font-smoothing has not been officially declared, but can still be useful */
   text-rendering: geometricPrecision;
-  /* outras opções -optimizeLegibility | optimizeSpeed */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 img {
-  /* For responsive images that adjust & adapt */
+
   height: auto;
   max-width: 100%;
-  
-  /* This isn't needed, but as a user, I get frustrated when I highlight text and the image gets highlighted too */
+
   user-select: none;
 }
 
 button {
-  color: inherit; /* By default, buttons don't inherit the font colour, this is a useful default to override */
+
+  color: inherit;
 }
 
 a, button {
-  touch-action: manipulation; /* Element doesn't want double-tap on mobile to zoom */
+ 
+  touch-action: manipulation;
 }
 
 svg {
-  /* Make the SVGs fit the parent container by default */
+ 
   height: 100%;
   width: 100%;
-  
-  /* Optional - make the SVG's fill be the same as the inherited color */
   fill: currentColor;
-  
-  /* Prevent the SVG from altering cursor interaction */
   pointer-events: none;
 }
 
 iframe, video {
-  /* Make iframes & videos fit the parent container by default */
+
   height: 100%;
-  width: 100%
+  width: 100%;
 }
 
-/**************************************************
-***************************************************
-*** O SEU CÓDIGO COMEÇA DEPOIS DESTE COMENTÁRIO ***
-***************************************************
-***************************************************/
-
-/***************** VARIABLES CSS ******************/
 :root {
   --header-height: 3.5rem;
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
+
+
   --black-color: hsl(0, 0%, 10%);
   --black-color-light: hsl(0, 0%, 20%);
   --black-color-lighten: hsl(0, 0%, 30%);
   --white-color: #fff;
-  --body-color: hsl(39, 30%, 93%);        /* bege/creme */
-  --primary-color: #AF3C49;    /* rosa escuro */
-  --secondary-color: hsl(0, 0%, 10%);     /* preto para texto */
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
-  /*--body-font: "Montserrat", sans-serif;*/
-  /*--normal-font-size: .938rem;*/
+  --body-color: hsl(39, 30%, 93%);    
+  --primary-color: #AF3C49;           
+  --secondary-color: hsl(0, 0%, 10%); 
 
-  /*========== Font weight ==========*/
   --font-regular: 400;
   --font-semi-bold: 600;
   --font-bold: 800;
 
-  /*========== z index ==========*/
+
   --z-tooltip: 10;
   --z-fixed: 100;
 }
-
-/*****************  Estilos Base ******************/
-
-body{
+body {
   font-size: 16px;
   font-family: "Fira Sans", sans-serif;
   background-color: var(--body-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: lato, sans-serif;
+  font-family: Lato, sans-serif;
 }
 
 p {
@@ -147,21 +120,13 @@ a {
 }
 
 a:hover, a:active, a.active {
-  color: var(--primary-color);  
+  color: var(--primary-color);
 }
-/**** espaçar elementos ****/
-.space-S{
-  height: 30px;
-}
-.space-M{
-  height: 60px;
-}
-.space-L{
-  height: 90px;
-}
-.space-XL{
-  height: 120px;
-}
+
+.space-S { height: 30px; }
+.space-M { height: 60px; }
+.space-L { height: 90px; }
+.space-XL { height: 120px; }
 
 .pRed {
   color: #AF3C49;
@@ -169,30 +134,6 @@ a:hover, a:active, a.active {
   margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
-/************************************
-******** largura dos elemento *******
-******** que compoem o body *********
-*************************************/
-/* utilizando tags */
-/*
-body header, body main, body footer {
- width: 100%;
- max-width: 1680px;
- margin: 0 auto;
- padding: 0 16px;
-}
-*/
-/* utilizando id */
-/*
-#topHeader, #mainContent, #mainFooter {
-  width: 100%;
-  max-width: 1680px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-*/
-/* utilizando classes */
-
 .pageWidth {
   width: 100%;
   max-width: 1680px;
@@ -200,11 +141,7 @@ body header, body main, body footer {
   padding: 0 16px;
 }
 
-/*********************************************
-**** Definição da tipografia para mobile *****
-*********************************************/
-
-h1, .h1{
+h1, .h1 {
   font-size: 2.986rem;
   font-weight: 700;
   letter-spacing: 0.22rem;
@@ -212,65 +149,33 @@ h1, .h1{
   margin-top: 1.5rem;
 }
 
-h2, .h2{
+h2, .h2 {
   font-size: 2.488rem;
   font-weight: 700;
   line-height: 1.15;
 }
 
-h3, .h3{
+h3, .h3 {
   font-size: 2.074rem;
   font-weight: 500;
   line-height: 1;
 }
 
-h4, .h4{
-  font-size: 1.728rem;
-}
+h4, .h4 { font-size: 1.728rem; }
+h5, .h5 { font-size: 1.44rem; }
+h6, .h6 { font-size: 1.2rem; }
 
-h5, .h5{
-  font-size: 1.44rem;
-}
-
-h6, .h6{
-  font-size: 1.2rem;
-}
-/*********************************************
-**** Definição da tipografia para desktop *****
-*********************************************/
 @media (min-width: 992px) {
-  h1, .h1{
-    font-size: 7.993rem;
-  }
-
-  h2, .h2{
-    font-size: 5.653rem;
-  }
-
-  h3, .h3{
-    font-size: 3.998rem;
-  }
-
-  h4, .h4{
-    font-size: 2.2827rem;
-  }
-
-  h5, .h5{
-    font-size: 1.9999rem;
-  }
-
-  h6, .h6{
-    font-size: 1.414rem;
-  }
+  h1, .h1 { font-size: 7.993rem; }
+  h2, .h2 { font-size: 5.653rem; }
+  h3, .h3 { font-size: 3.998rem; }
+  h4, .h4 { font-size: 2.2827rem; }
+  h5, .h5 { font-size: 1.9999rem; }
+  h6, .h6 { font-size: 1.414rem; }
 }
 
-/****************************************
-********** menu de navegação ************
-****************************************/
-
-/*=============== HEADER ===============*/
 #topHeader {
-  position: fixed; /* menu fixo no scroll*/
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -283,12 +188,12 @@ h6, .h6{
 #mainMenu {
   height: var(--header-height);
   width: 100%;
-  max-width:1680px;
+  max-width: 1680px;
   margin: 0 auto;
   padding: 0 16px;
 }
 
-.nav__burger, 
+.nav__burger,
 .nav__close {
   color: var(--black-color);
 }
@@ -306,15 +211,11 @@ h6, .h6{
   column-gap: .25rem;
 }
 
-#headerLogo a{
+#headerLogo a {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
   font-weight: 900;
-}
-
-#headerLogo img {
-  width: 3rem;
 }
 
 .nav__toggle {
@@ -323,7 +224,7 @@ h6, .h6{
   height: 32px;
 }
 
-.nav__burger, 
+.nav__burger,
 .nav__close {
   position: absolute;
   width: max-content;
@@ -339,7 +240,6 @@ h6, .h6{
   opacity: 0;
 }
 
-/* Navigation for mobile devices */
 @media screen and (max-width: 992px) {
   .nav__menu {
     position: absolute;
@@ -375,29 +275,27 @@ h6, .h6{
   color: var(--primary-color);
 }
 
-/* Show menu */
+
 .show-menu {
   opacity: 1;
   top: 3.5rem;
   pointer-events: initial;
 }
 
-/* Show icon */
 .show-icon .nav__burger {
   opacity: 0;
   transform: rotate(90deg);
 }
+
 .show-icon .nav__close {
   opacity: 1;
   transform: rotate(90deg);
 }
 
-/* Navigation for large devices */
 @media screen and (min-width: 992px) {
   #topHeader {
     margin-inline: auto;
   }
-
   #mainMenu {
     height: calc(var(--header-height) + 2rem);
     display: flex;
@@ -422,35 +320,22 @@ h6, .h6{
     background-color: transparent;
   }
 }
-
-
-/****************************************
-************* mainContent ***************
-****************************************/
-
 #mainContent {
-  margin-top:var(--header-height)!important;
+  margin-top: var(--header-height) !important;
 }
 
 @media screen and (min-width: 992px) {
   #mainContent {
-    margin-top:calc(var(--header-height)+2rem)
+    margin-top: calc(var(--header-height) + 2rem);
   }
 }
 
-/****************************************
-************* mainFooter ***************
-****************************************/
 
 #mainFooter {
   padding: 20px;
   text-align: center;
 }
-/****************************************
-************* secção hero ***************
-****************************************/
 
-/* Área principal com apresentação */
 #hero {
   display: flex;
   align-items: center;
@@ -459,12 +344,11 @@ h6, .h6{
   padding: 6rem 4rem;
   max-width: 1680px;
   margin: 0 auto;
-  min-height: 90vh; /* ocupa quase o ecrã todo */
+  min-height: 90vh;
 }
 
-
 #hero h1 span {
-  color: var(--primary-color); /* rosa no destaque do título */
+  color: var(--primary-color);
 }
 
 .hero__text {
@@ -476,14 +360,12 @@ h6, .h6{
   line-height: 1.6;
   color: var(--black-color-lighten);
 }
- 
+
 .hero__image img {
   width: 700px;
-  margin-bottom: -6rem; /* cola a imagem ao fundo */
+  margin-bottom: -6rem;
 }
 
-
-/* Botão */
 .btn {
   display: inline-block;
   margin-top: 1.5rem;
@@ -500,11 +382,6 @@ h6, .h6{
   color: var(--white-color);
 }
 
-/****************************************
-********* secção projetos em destaque ***
-****************************************/
-
-/* Grelha de projetos na página principal */
 #featured {
   padding: 3rem 2rem;
   max-width: 1680px;
@@ -521,7 +398,6 @@ h6, .h6{
   gap: 1.5rem;
 }
 
-/* Card de cada projeto */
 .projects__grid article {
   background-color: var(--white-color);
   border-radius: 1rem;
@@ -531,7 +407,7 @@ h6, .h6{
 }
 
 .projects__grid article:hover {
-  transform: translateY(-4px); /* sobe ao passar o rato */
+  transform: translateY(-4px);
 }
 
 .projects__grid img {
@@ -540,12 +416,10 @@ h6, .h6{
   object-fit: cover;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
-  background-color: hsl(39, 30%, 88%); /* placeholder enquanto não há imagem */
+  background-color: hsl(39, 30%, 88%);
 }
 
-.projects__grid h3 {
-  margin-bottom: 0.5rem;
-}
+.projects__grid h3 { margin-bottom: 0.5rem; }
 
 .projects__grid p {
   color: var(--black-color-lighten);
@@ -558,99 +432,30 @@ h6, .h6{
   color: var(--primary-color);
 }
 
-/****************************************
-************* responsive ****************
-****************************************/
 
-/* Em telemóvel, os cards ficam em coluna */
 @media screen and (max-width: 992px) {
+
   #hero {
     flex-direction: column;
     text-align: center;
     padding: 2rem 1rem;
   }
-
+ 
   .projects__grid {
     grid-template-columns: 1fr;
   }
 }
 
-/* Poster do projeto */
-#project-poster {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 2rem;
-}
-
-#project-poster img {
-  width: 100%;
-  border-radius: 1rem;
-}
-/****************************************
-*********** página de projeto ***********
-****************************************/
-
-#project-poster {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 2rem;
-}
-
-#project-poster img {
-  width: 100%;
-  border-radius: 1rem;
-}
-
-#project-nav {
-  max-width: 900px;
-  margin: 4rem auto;
-  padding: 2rem;
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid hsla(0, 0%, 0%, 0.1);
-}
-
-#project-nav a {
-  font-weight: var(--font-semi-bold);
-  color: var(--primary-color);
-}
-#project-header {
-  padding: 2rem 4rem;
-}
-
-#project-description {
-  padding: 0 4rem 2rem;
-} 
-/* Forçar cards da grelha de projetos com altura igual */
-main > ul {
-  align-items: stretch;
-}
-
-main > ul > li {
-  display: flex;
-}
-
-main > ul > li > article {
-  width: 100%;
-}
-/* Empurra o "Ver Projeto" do card de vídeo para baixo */
-#mainContent ul li:last-child article a {
-  margin-top: 3rem;
-}
-
 #p5Canvas {
-  display:flex;
-  flex-direction:column;
-  align-items: :center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0.5rem;
-  gap:0.5rem;
-  }
-
-
+  gap: 0.5rem;
+}
 .paginaContactos {
   padding: 2rem 4rem;
 }
-
 
 .contactos__wrapper {
   display: flex;
@@ -660,11 +465,9 @@ main > ul > li > article {
   margin-bottom: 3rem;
 }
 
-
 .contactos__info {
   flex: 1 1 280px;
 }
-
 
 .contactos__texto {
   line-height: 1.6;
@@ -673,13 +476,11 @@ main > ul > li > article {
   font-size: 1.05rem;
 }
 
-
 .contactos__lista {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-
 
 .contacto__item {
   display: flex;
@@ -691,11 +492,7 @@ main > ul > li > article {
   box-shadow: 0 4px 20px hsla(0, 0%, 0%, 0.06);
 }
 
-/* Ícone do contacto */
-.contacto__icone {
-  font-size: 1.2rem;
-}
-
+.contacto__icone { font-size: 1.2rem; }
 
 .contacto__label {
   font-size: 0.8rem;
@@ -704,12 +501,10 @@ main > ul > li > article {
   text-transform: uppercase;
 }
 
-
 .contacto__link {
   color: #AF3C49;
   font-weight: 600;
 }
-
 
 .contactos__formulario {
   flex: 1.5 1 340px;
@@ -719,13 +514,11 @@ main > ul > li > article {
   box-shadow: 0 4px 20px hsla(0, 0%, 0%, 0.06);
 }
 
-
 .contactos__formulario form {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
-
 
 .campo {
   display: flex;
@@ -733,13 +526,11 @@ main > ul > li > article {
   gap: 0.5rem;
 }
 
-
 .campo label {
   font-weight: 600;
   color: hsl(0, 0%, 10%);
   font-size: 0.9rem;
 }
-
 
 .campo input,
 .campo textarea {
@@ -753,11 +544,9 @@ main > ul > li > article {
   background: hsl(0, 0%, 98%);
 }
 
-
 .campo textarea {
   resize: vertical;
 }
-
 
 .btn-enviar {
   background: #AF3C49;
@@ -772,7 +561,6 @@ main > ul > li > article {
   margin-top: 0.5rem;
 }
 
-
 .btn-enviar:hover {
   opacity: 0.85;
 }
@@ -780,7 +568,6 @@ main > ul > li > article {
 .paginaProcessing {
   padding: 2rem 4rem;
 }
-
 
 .processing__wrapper {
   display: flex;
@@ -790,18 +577,15 @@ main > ul > li > article {
   margin-top: 2rem;
 }
 
-
 .processing__canvas {
   flex: 1 1 320px;
 }
-
 
 .processing__descricao {
   flex: 1 1 320px;
   line-height: 1.8;
   color: hsl(0, 0%, 30%);
 }
-
 
 .processing__descricao p {
   margin-bottom: 1rem;
@@ -810,8 +594,6 @@ main > ul > li > article {
 .paginaProjeto {
   padding: 2rem 4rem;
 }
-
-
 .btn-back {
   color: #AF3C49;
   font-weight: 600;
@@ -819,11 +601,9 @@ main > ul > li > article {
   margin-top: 1.5rem;
 }
 
-
 .projeto__titulo {
   margin-top: 1.5rem;
 }
-
 
 .projeto__meta {
   display: flex;
@@ -835,18 +615,15 @@ main > ul > li > article {
   flex-wrap: wrap;
 }
 
-
 .projeto__secao {
   margin-top: 2rem;
 }
-
 
 .projeto__descricao {
   margin-top: 1rem;
   line-height: 1.8;
   color: hsl(0, 0%, 30%);
 }
-
 
 .projeto__galeria {
   display: grid;
@@ -855,12 +632,28 @@ main > ul > li > article {
   margin-top: 1rem;
 }
 
-
 .projeto__galeria img {
   width: 100%;
   border-radius: 0.75rem;
 }
 
+.projeto__poster {
+  width: 80%;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projeto__video {
+  width: 80%;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .projeto__nav {
   display: flex;
@@ -870,26 +663,9 @@ main > ul > li > article {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-
 .projeto__nav a {
   color: #AF3C49;
   font-weight: 600;
-}
-.projeto__poster {
-  width: 80%;
-  border-radius: 1rem;
-  margin-top: 2rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.projeto__video {
-  width: 80%;
-  border-radius: 1rem;
-  margin-top: 1rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 .paginaProjetos {
   padding: 2rem 4rem;
@@ -898,6 +674,7 @@ main > ul > li > article {
 .paginaProjetos .pRed {
   margin-bottom: 2rem;
 }
+
 .grelha__projetos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -921,9 +698,7 @@ main > ul > li > article {
   padding: 1.25rem;
 }
 
-.card__info h3 {
-  margin-bottom: 0.25rem;
-}
+.card__info h3 { margin-bottom: 0.25rem; }
 
 .card__info p {
   font-size: 0.9rem;
@@ -955,10 +730,10 @@ main > ul > li > article {
 .card__link--video {
   margin-top: 3rem;
 }
+
 .paginaSobreMim {
   padding: 2rem 4rem;
 }
-
 
 .paginaSobreMim .pRed {
   margin-bottom: 2rem;
