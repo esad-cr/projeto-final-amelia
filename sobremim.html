@@ -1,11 +1,3 @@
-<!--
-    Nome: Amélia Petiz | Nº: 3230579
-    Exercício: Portfólio
-    Ano letivo: 3º, 2025-2026 | Semestre: 2º
-    UC: Laboratório de Projeto II
-    Curso: L.DGM | Escola: ESAD // Politécnico de Leiria
-    Docente: Luís Carradas
--->
 <!DOCTYPE html>
 <html lang="pt-PT">
     <head>
@@ -42,61 +34,62 @@
             </nav>
         </header>
 
-        <main id="mainContent" class="pageWidth" style="padding: 2rem 4rem;">
+        <main id="mainContent" class="pageWidth paginaSobreMim">
 
-            <h1 style="margin-top: 1.5rem;">Sobre mim</h1>
-            <p style="color: #AF3C49; font-weight: 600; margin-top: 0.5rem; margin-bottom: 2rem;">Amélia Petiz — Designer Multimédia</p>
+            <!-- Título e subtítulo da página -->
+            <h1>Sobre mim</h1>
+            <p class="pRed">Amélia Petiz — Designer Multimédia</p>
 
-            <!-- Layout principal: foto + texto -->
-            <div style="display: flex; gap: 3rem; align-items: flex-start; flex-wrap: wrap; margin-bottom: 3rem;">
+          
+            <div class="sobremim__wrapper">
 
-                <!-- Foto -->
-                <div style="flex: 0 0 220px;">
-                    <img src="imagens/sobremim.png" style="width: 220px; height: 220px; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 1rem;" alt="Fotografia de Amélia Petiz">
+                
+                <div class="sobremim__foto">
+                    <img src="imagens/sobremim.png" alt="Fotografia de Amélia Petiz">
                 </div>
 
-                <!-- Apresentação -->
-                <div style="flex: 1 1 320px;">
-                    <p style="line-height: 1.8; color: hsl(0,0%,30%); font-size: 1.5rem;">Sou uma designer com uma forte paixão pelo visual e pela criatividade. Adoro trabalhar com cores, formas e detalhes que tornam cada projeto único, procurando criar experiências digitais funcionais, acolhedoras e visualmente apelativas.</p>
+              
+                <div class="sobremim__texto">
+                    <p>Sou uma designer com uma forte paixão pelo visual e pela criatividade. Adoro trabalhar com cores, formas e detalhes que tornam cada projeto único, procurando criar experiências digitais funcionais, acolhedoras e visualmente apelativas.</p>
                 </div>
 
             </div>
 
-            <h2 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1.25rem; color: hsl(0,0%,10%);">Percurso Académico</h2>
+         
+            <h2 class="sobremim__titulo-secao">Percurso Académico</h2>
 
-<ul style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 3rem;">
-    <li style="display: flex; gap: 1.5rem; align-items: flex-start; background: white; border-radius: 0.75rem; padding: 1.25rem 1.5rem; box-shadow: 0 4px 20px hsla(0,0%,0%,0.06);">
-        <span style="background: hsl(0,34%,93%); color: #AF3C49; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 99px; white-space: nowrap; margin-top: 3px; min-width: 90px; text-align: center;">2023 — 2026</span>
-        <div>
-            <p style="font-weight: 700; color: hsl(0,0%,10%); margin-bottom: 0.2rem;">Licenciatura em Design Gráfico e Multimédia</p>
-            <p style="font-size: 0.9rem; color: hsl(0,0%,40%);">Escola Superior de Artes &amp; Design — Caldas da Rainha</p>
-        </div>
-    </li>
-    
-    <li style="display: flex; gap: 1.5rem; align-items: flex-start; background: white; border-radius: 0.75rem; padding: 1.25rem 1.5rem; box-shadow: 0 4px 20px hsla(0,0%,0%,0.06);">
-        <span style="background: hsl(0,34%,93%); color: #AF3C49; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 99px; white-space: nowrap; margin-top: 3px; min-width: 90px; text-align: center;">2023</span>
-        <div>
-            <p style="font-weight: 700; color: hsl(0,0%,10%); margin-bottom: 0.2rem;">Estágio Profissional — 4 meses</p>
-            <p style="font-size: 0.9rem; color: hsl(0,0%,40%);">Leya Editora</p>
-        </div>
-    </li>
-    
-    <li style="display: flex; gap: 1.5rem; align-items: flex-start; background: white; border-radius: 0.75rem; padding: 1.25rem 1.5rem; box-shadow: 0 4px 20px hsla(0,0%,0%,0.06);">
-        <span style="background: hsl(0,34%,93%); color: #AF3C49; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 99px; white-space: nowrap; margin-top: 3px; min-width: 90px; text-align: center;">2020 — 2023</span>
-        <div>
-            <p style="font-weight: 700; color: hsl(0,0%,10%); margin-bottom: 0.2rem;">Curso de Artes Gráficas</p>
-            <p style="font-size: 0.9rem; color: hsl(0,0%,40%);">Colégio Internato dos Carvalhos</p>
-        </div>
-    </li>
-</ul>
-            <!-- Ferramentas -->
-            <h2 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 1.25rem; color: hsl(0,0%,10%);">Ferramentas</h2>
+            <ul class="sobremim__lista">
+                <li class="sobremim__item">
+                    <span class="card__tag">2023 — 2026</span>
+                    <div>
+                        <p class="sobremim__item-titulo">Licenciatura em Design Gráfico e Multimédia</p>
+                        <p class="sobremim__item-subtitulo">Escola Superior de Artes &amp; Design — Caldas da Rainha</p>
+                    </div>
+                </li>
+                <li class="sobremim__item">
+                    <span class="card__tag">2023</span>
+                    <div>
+                        <p class="sobremim__item-titulo">Estágio Profissional — 4 meses</p>
+                        <p class="sobremim__item-subtitulo">Leya Editora</p>
+                    </div>
+                </li>
+                <li class="sobremim__item">
+                    <span class="card__tag">2020 — 2023</span>
+                    <div>
+                        <p class="sobremim__item-titulo">Curso de Artes Gráficas</p>
+                        <p class="sobremim__item-subtitulo">Colégio Internato dos Carvalhos</p>
+                    </div>
+                </li>
+            </ul>
 
-            <ul style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 3rem;">
-                <li><span style="background: hsl(0,34%,93%); color: #AF3C49; font-size: 12px; font-weight: 700; padding: 5px 14px; border-radius: 99px;">Figma</span></li>
-                <li><span style="background: hsl(0,34%,93%); color: #AF3C49; font-size: 12px; font-weight: 700; padding: 5px 14px; border-radius: 99px;">Adobe Illustrator</span></li>
-                <li><span style="background: hsl(0,34%,93%); color: #AF3C49; font-size: 12px; font-weight: 700; padding: 5px 14px; border-radius: 99px;">Adobe Photoshop</span></li>
-                <li><span style="background: hsl(0,34%,93%); color: #AF3C49; font-size: 12px; font-weight: 700; padding: 5px 14px; border-radius: 99px;">Adobe After Effects</span></li>
+        
+            <h2 class="sobremim__titulo-secao">Ferramentas</h2>
+
+            <ul class="sobremim__ferramentas">
+                <li><span class="card__tag">Figma</span></li>
+                <li><span class="card__tag">Adobe Illustrator</span></li>
+                <li><span class="card__tag">Adobe Photoshop</span></li>
+                <li><span class="card__tag">Adobe After Effects</span></li>
             </ul>
 
         </main>
